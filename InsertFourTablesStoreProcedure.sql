@@ -18,7 +18,7 @@ BEGIN
            ,CommonName
            ,IdDataSpecies
            ,IndividualsPerArea)
-     VALUES
+    VALUES
            (@ScientificName
            ,@CommonName
            ,6
@@ -29,23 +29,23 @@ BEGIN
            ,RuttingStart
            ,RuttingEnd
            ,Crystal)
-     VALUES
+    VALUES
            (3
            ,'03-08-2018'
            ,'03-08-2019'
            ,0);
-
-	INSERT INTO Community
+    
+    INSERT INTO Community
            (Name)
     VALUES
            (@CommunityName);
-	
-	INSERT INTO dbo.Housing
-		   (IdNationalPark
-		   ,Capacity)
-	VALUES 
-		   (3
-		   ,@HousingCapacity);
+    	
+    INSERT INTO dbo.Housing
+	   (IdNationalPark
+	   ,Capacity)
+    VALUES 
+           (3
+           ,@HousingCapacity);
 
 
     END TRY
