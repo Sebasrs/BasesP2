@@ -3,16 +3,12 @@ GO
 
 BEGIN TRAN;
 
-UPDATE Species
-SET
-	ScientificName = 'Animal Editado 1'
-WHERE
-	IdSpecies = 3;
-
 UPDATE Staff
 SET
-	StaffName = 'Juan'
+	StaffName = 'Paco'
 WHERE
 	IdStaff = 3;
+
+SELECT * FROM Degree;
 
 COMMIT TRAN;
