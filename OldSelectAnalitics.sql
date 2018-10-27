@@ -11,7 +11,7 @@ SELECT
 		        ON Species.IdSpecies = SpeciesByArea.IdSpecies
 		INNER JOIN FoodChain 
 			ON Species.IdSpecies = FoodChain.IdPrey
-	WHERE Species.IdSpecies BETWEEN 152 AND 1023)      AS SumIndividualsPerArea,
+	   WHERE Species.IdSpecies BETWEEN 152 AND 1023)   AS SumIndividualsPerArea,
        (SELECT DISTINCT MIN(Species.IndividualsPerArea)
        FROM Species WHERE Species.IndividualsPerArea != 1) AS MinIndividualsPerArea,
        dbo.AddOneHundred(90) AS OwnFuntion
@@ -28,6 +28,6 @@ WHERE Species.IdSpecies
 	BETWEEN 
 	        (SELECT IdSpecies 
 		 FROM  Species
-			WHERE Species.IdSpecies = 152)
+		      WHERE Species.IdSpecies = 152)
 	AND 1023 
 GROUP BY DataSpecies.IdSpeciesType
