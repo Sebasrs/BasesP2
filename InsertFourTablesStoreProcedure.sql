@@ -1,7 +1,7 @@
 USE NationalPark
-
 GO
-CREATE PROCEDURE InsertInFourTables
+
+CREATE PROCEDURE sp_InsertInFourTables
 (     @ScientificName varchar(50)
     , @CommonName varchar(50)
     , @CommunityName varchar(50)
