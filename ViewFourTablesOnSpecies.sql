@@ -9,7 +9,7 @@ SELECT Species.IdSpecies,
        DataSpecies.Crystal, 
        SpeciesType.SpeciesType, 
        Species.IndividualsPerArea,
-	   SpeciesByArea.IdArea 
+       SpeciesByArea.IdArea 
 
 FROM   Species 
        INNER JOIN DataSpecies 
